@@ -1,0 +1,59 @@
+@import '../../../../styles.scss';
+
+.personal-info-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.view-entry-hold {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: calc(100% - 22px);
+  padding-right: 22px;
+
+  .entry-label {
+    color: #666;
+    padding-left: 10px;
+    margin-top: 0;
+  }
+
+  .entry-data {
+    font-weight: bold;
+    font-size: 120%;
+    padding: 4px 10px 25px;
+  }
+}
+
+.form-field-hold {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: calc(100% - 22px);
+  padding: 0 22px 10px 0;
+
+  .form-field-label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    color: #666;
+  }
+
+  .form-field-input {
+    ::ng-deep {
+      .mat-form-field-flex {
+        background-color: transparent;
+      }
+
+      .mat-form-field-infix {
+        font-weight: bold;
+        font-size: 120%;
+        padding: 0 0 5px 0;
+      }
+
+      .mat-form-field-underline {
+        width: calc(100% + 22px);
+      }
+    }
+  }
+}
